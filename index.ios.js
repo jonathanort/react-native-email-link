@@ -60,7 +60,7 @@ export function isAppInstalled(app) {
  */
 export function askAppChoice(
   title = "Open mail app",
-  message = "Which app would you like to open?",
+  message = "In which email app are you receiving the verification email?",
   cancelLabel = "Cancel"
 ) {
   return new Promise(async resolve => {

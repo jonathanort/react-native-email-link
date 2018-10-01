@@ -24,6 +24,9 @@ export async function openInbox(options = {}) {
     );
   }
 
-  NativeModules.Email.open(options.title || "What app would you like to open?");
+  NativeModules.Email.open(
+    options.title ||
+      "In which email app are you receiving the verification email?"
+  );
   return;
 }
